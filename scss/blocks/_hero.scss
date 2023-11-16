@@ -1,0 +1,142 @@
+.hero {
+    width: 100%;
+    height: 868px;
+    background: url(../../images/heroImg.png), no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        padding-top: 233px;
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 399px;
+        color: #FFF;
+        font-family: Suisse Intl, sans-serif;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 77px;
+        letter-spacing: -1.28px;
+    }
+
+    &__sp {
+        color: #B4BFC0;
+    }
+
+    &__text {
+        max-width: 700px;
+        color: #FFF;
+        text-align: center;
+        margin: 64px auto 0;
+    }
+
+    &__form {
+        margin-top: 48px;
+
+        .form {
+            &__wrapper {
+                display: flex;
+                align-items: flex-start;
+                gap: 25px;
+                padding: 28px 18px;
+                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.40);
+                backdrop-filter: blur(14px);
+
+            }
+
+            &__inner {
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                // gap: 14px;
+
+                select {
+                    margin-top: 14px;
+                    padding: 14px 15px;
+                    border-radius: 10px;
+                    border: 1px solid #E8F0F1;
+                    background: none;
+                    outline: none;
+                    color: #E8F0F1;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 48px;
+                }
+
+                #region {
+                    width: 175px;
+                }
+
+                #district {
+                    width: 174px;
+                }
+
+                #price {
+                    width: 210px;
+                }
+
+                #field {
+                    width: 227px;
+                }
+
+            }
+
+            &__text {
+                color: #122719;
+                font-weight: 500;
+                letter-spacing: -0.28px;
+            }
+
+            &__list {
+                display: flex;
+                margin-top: 14px;
+            }
+
+            &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 49px;
+                height: 48px;
+                background: #e6edee;
+                color: #A9B8B9;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 48px;
+                letter-spacing: -0.28px;
+
+                &:hover {
+                    background: #59C154;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 48px;
+                }
+
+                &:active {
+                    background: #59C154;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 48px;
+                }
+
+                &:nth-child(1) {
+                    border-radius: 10px 0 0 10px;
+                }
+
+                &:last-child {
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+
+            &__btn {
+                margin-left: auto;
+                margin-top: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.customers {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    &__heading {
+        color: #000;
+        font-family: Suisse Intl, sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 27px;
+    }
+
+    &__box {
+        background: url("../../images/customers-bg-img.png"), lightgray -5.325px -447.547px / 106.509% 201.413% no-repeat;
+        padding-bottom: 48px;
+
+        &-cards {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 30px;
+            padding: 151px 0 87px 0;
+
+
+            &-wrapper {
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.41);
+                backdrop-filter: blur(15.899999618530273px);
+                padding: 0 21px 0 29px;
+
+                &-img {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 35px;
+
+
+                }
+            }
+        }
+    }
+
+    &__stars {
+        display: flex;
+        margin-top: 25px;
+
+    }
+
+    &__title {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20.5px;
+        letter-spacing: -0.4px;
+        text-align: left;
+        margin: 21px 0 16px 0;
+    }
+
+    &__desc {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.5px;
+        letter-spacing: -0.32px;
+        text-align: left;
+        margin-bottom: 61px;
+
+    }
+
+    &__blur {
+        background: rgba(255, 255, 255, 0.40);
+        backdrop-filter: blur(14px);
+        width: 100%;
+        height: 66px;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,202 @@
+.news {
+    background: #F3F7F7;
+    padding: 100px 0;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        color: #59C154;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 48px;
+    }
+
+    &__heading {
+        color: #112718;
+        text-align: center;
+        font-family: Suisse Intl, sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.96px;
+    }
+
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 16px;
+    }
+
+    &__text {
+        margin-top: 8px;
+        color: #112718;
+        text-align: center;
+        line-height: 20.5px;
+        letter-spacing: -0.32px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 30px;
+        padding-top: 50px;
+
+        &-card {
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 2px 8px 0px rgba(17, 39, 24, 0.10);
+
+            &-text {
+                padding: 0 19.94px 0 19.94px;
+
+                &-title {
+                    color: #A9B8B9;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 52px;
+                    letter-spacing: -1.373px;
+                    text-align: left;
+                }
+
+                &-card {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 28px;
+
+                    &-img {
+                        position: relative;
+                    }
+
+                    &-box {
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.80);
+                        backdrop-filter: blur(4px);
+                        position: absolute;
+                        background-color: red;
+                        top: -10px;
+
+                        &-img {
+                            position: absolute;
+                            top: -10px;
+                        }
+                    }
+
+                    &-title {
+                        color: #112718;
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 52px;
+                        letter-spacing: -1.373px;
+                    }
+
+                }
+
+                &--span {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 25px;
+                    padding-bottom: 20px;
+
+                    &-card {
+                        display: flex;
+
+                        &-span {
+                            color: #000;
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 52px;
+                            letter-spacing: -1.373px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.news__box-card-img {
+    position: relative;
+}
+
+.news__box-card-box {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(4px);
+    width: 45.89px;
+    height: 46px;
+
+    position: absolute;
+    top: 290px;
+    left: 306px;
+
+
+}
+.news__box-card-box--img{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+
+}
+.news__box-card-img2{
+    position: relative;
+}
+.news__box-card-box2 {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(4px);
+    width: 45.89px;
+    height: 46px;
+    position: absolute;
+    top: 290px;
+    left: 686px;
+
+
+}
+.news__box-card-box2--img{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+
+}
+
+.news__box-card-img3{
+    position: relative;
+}
+.news__box-card-box3 {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(4px);
+    width: 45.89px;
+    height: 46px;
+    position: absolute;
+    top: 290px;
+    left: 1065px;
+
+
+}
+.news__box-card-box3--img{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+
+}

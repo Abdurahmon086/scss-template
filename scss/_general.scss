@@ -1,6 +1,8 @@
 /* GENERAL */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,15 +15,15 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
     color: black;
     background-color: white;
     overflow-x: hidden;
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.32px;
 }
 
 img {
@@ -29,7 +31,67 @@ img {
     height: auto;
 }
 
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /* STICKY FOOTER */
 .site-main {
     flex-grow: 1;
+}
+
+.smBtn {
+    border-radius: 10px;
+    background: #59C154;
+    box-shadow: 0px 2px 4px 0px rgba(17, 39, 24, 0.12);
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.28px;
+    width: 131px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mdBtn {
+    border-radius: 10px;
+    background: #59C154;
+    box-shadow: 0px 2px 4px 0px rgba(17, 39, 24, 0.12);
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    width: 189px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lgBtn {
+    border-radius: 10px;
+    background: #59C154;
+    box-shadow: 0px 2px 4px 0px rgba(17, 39, 24, 0.12);
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+    width: 220px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

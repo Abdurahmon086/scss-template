@@ -1,16 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+  echo "# asmut-site-shablon" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RuzimurodovDilshodbek/asmut-site-shablon.git
+git push -u origin main
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Asmut</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
+  <body>
+    <header>
+      <div class="head container">
+        <a href="/" class="headerLink"
+          ><img src="./images/logo.svg" alt="Asmut logo"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Xizmatlar</a></li>
+            <li><a href="#">Manzillar</a></li>
+            <li><a href="#">Biz haqimizda</a></li>
+            <li><a href="#">Dillerlar</a></li>
+          </ul>
+        </nav>
+        <div class="head__lang">
+          <img src="./images/language.svg" alt="" />
+          <p>O'zb</p>
+        </div>
+        <button class="head__btn smBtn">Kirish</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <h1 class="hero__title">
+            Sizning <span class="hero__sp"> yangi </span>DARAJANGIZ
+          </h1>
+          <p class="hero__text">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
 
-<body>
+          <form class="hero__form form">
+            <div class="form__wrapper">
+              <label for="region" class="form__inner">
+                <p class="form__text">Viloyat nomi</p>
+                <select id="region">
+                  <option value="Tanlang" hidden>Tanlang</option>
+                  <option value="1">Saab</option>
+                  <option value="2">Opel</option>
+                </select>
+              </label>
+              <label for="district" class="form__inner"
+                ><p class="form__text">Tuman nomi</p>
+                <select id="district">
+                  <option value="Tanlang" hidden>Tanlang</option>
+                  <option value="1">Saab</option>
+                  <option value="2">Opel</option>
+                </select>
+              </label>
+              <div class="form__inner">
+                <p class="form__text">Xonani tanlang</p>
+                <ul class="form__list">
+                  <li class="form__item">1</li>
+                  <li class="form__item">2</li>
+                  <li class="form__item">3</li>
+                  <li class="form__item">4</li>
+                </ul>
+              </div>
+              <label for="price" class="form__inner"
+                ><p class="form__text">Narxi</p>
+                <select id="price">
+                  <option value="Tanlang" hidden>Tanlang</option>
+                  <option value="1">Saab</option>
+                  <option value="2">Opel</option>
+                </select>
+              </label>
+              <label for="field" class="form__inner"
+                ><p class="form__text">Maydoni</p>
+                <select id="field">
+                  <option value="Tanlang" hidden>Tanlang</option>
+                  <option value="1">Saab</option>
+                  <option value="2">Opel</option>
+                </select>
+              </label>
+            </div>
+            <button class="mdBtn form__btn">Qidiruv</button>
+          </form>
+        </div>
+      </section>
+      <section class="shoping">
+        <div class="container shoping__cards card">
+          <div class="card__wrapper">
+            <h4 class="card__title">Sotish</h4>
+            <p class="card__text">
+              Platforma orqali koʻchmas mulkni sotish imkoniyati
+            </p>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__title">Sotib olish</h4>
+            <p class="card__text">
+              Platforma orqali koʻchmas mulk sotib olish imkoniyati
+            </p>
+          </div>
+          <div class="card__wrapper">
+            <h4 class="card__title">Ijara</h4>
+            <p class="card__text">
+              Koʻchmas mulk ijaraga olish va berish xizmati
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container partners__wrapper">
+          <a href="#" class="partners__link">Barchasini koʻrish</a>
+          <h3 class="partners__title">Bizning hamkorlar</h3>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <div class="partners__wrapper-img">
+                <img src="./images/partners1.jpg" alt="partners img first" />
+              </div>
+              <div class="partners__stars">
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star_half.svg" alt="start icon" />
+              </div>
+              <p class="partners__text">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,
+              </p>
+            </li>
+            <li class="partners__item">
+              <div class="partners__wrapper-img">
+                <img src="./images/partners2.jpg" alt="partners img second" />
+              </div>
+              <div class="partners__stars">
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star_half.svg" alt="start icon" />
+              </div>
+              <p class="partners__text">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,
+              </p>
+            </li>
+            <li class="partners__item">
+              <div class="partners__wrapper-img">
+                <img src="./images/partners3.jpg" alt="partners img thord" />
+              </div>
+              <div class="partners__stars">
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star_half.svg" alt="start icon" />
+              </div>
+              <p class="partners__text">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,
+              </p>
+            </li>
+            <li class="partners__item">
+              <div class="partners__wrapper-img">
+                <img src="./images/partners4.jpg" alt="partners img four" />
+              </div>
+              <div class="partners__stars">
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star.svg" alt="start icon" />
+                <img src="./images/star_half.svg" alt="start icon" />
+              </div>
+              <p class="partners__text">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="customers">
+          <h3 class="customers__heading container">Mijozlar fikrlari</h3>
+          <div class="customers__box">
+            <div class="container">
+              <div class="customers__box-cards">
+                <div class="customers__box-cards-wrapper">
+                  <div class="customers__box-cards-wrapper-img">
+                    <div>
+                      <img src="./images/customers-icons.png" alt="customers-img">
+                    </div>
+                    <div>
+                      <img src="./images/customers-img.png" alt="customers-img-second">
+                    </div>
+                  </div>
+                  <div class="customers__stars">
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star_half.svg" alt="start icon" />
+                  </div>
+                  <p class="customers__title">
+                    Lorem Ipsum
+                  </p>
+                  <p class="customers__desc">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+                </div>
 
-</body>
+                <div class="customers__box-cards-wrapper">
+                  <div class="customers__box-cards-wrapper-img">
+                    <div>
+                      <img src="./images/customers-icons.png" alt="customers-img">
+                    </div>
+                    <div>
+                      <img src="./images/customers-img.png" alt="customers-img-second">
+                    </div>
+                  </div>
+                  <div class="customers__stars">
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star_half.svg" alt="start icon" />
+                  </div>
+                  <p class="customers__title">
+                    Lorem Ipsum
+                  </p>
+                  <p class="customers__desc">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+                </div>
 
+                <div class="customers__box-cards-wrapper">
+                  <div class="customers__box-cards-wrapper-img">
+                    <div>
+                      <img src="./images/customers-icons.png" alt="customers-img">
+                    </div>
+                    <div>
+                      <img src="./images/customers-img.png" alt="customers-img-second">
+                    </div>
+                  </div>
+                  <div class="customers__stars">
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star.svg" alt="start icon" />
+                    <img src="./images/star_half.svg" alt="start icon" />
+                  </div>
+                  <p class="customers__title">
+                    Lorem Ipsum
+                  </p>
+                  <p class="customers__desc">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+                </div>
+              </div>
+          </div>
+          <div class="customers__blur">
+            
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container news__wrapper">
+          <a href="#" class="news__link">Barchasini koʻrish</a>
+          <h3 class="news__heading">Yangiliklar</h3>
+         <div class="news__box">
+          <div class="news__box-card">
+            <img class="news__box-card-img" src="./images/news-img.png" alt="news-img">
+            <div class="news__box-card-box">
+              <img class="news__box-card-box--img" src="./images/news-icon.png" alt="">
+            </div>
+            <div class="news__box-card-text">
+              <p class="news__box-card-text-title">
+                Toshkent, Sergeli-8a
+              </p>
+              <div class="news__box-card-text-card">
+                <p class="news__box-card-text-card-title">
+                  26 000 000 soʻm 
+                </p>
+                <img src="./images/star_border.png" alt="star_border-img">
+              </div>
+              <div class="news__box-card-text--span">
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/view_stream.png" alt="view_stream-img">
+                  <span class="news__box-card-text--span-card-span">62 m2</span>
+                </div>
+
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/meeting_room.png" alt="meeting_room-img">
+                  <span class="news__box-card-text--span-card-span">2 x</span>
+                </div>
+
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/stairs.png" alt="stairs-img">
+                  <span class="news__box-card-text--span-card-span">4/9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__box-card">
+            <img class="news__box-card-img2" src="./images/news-img2.png" alt="news-img">
+            <div class="news__box-card-box2">
+              <img class="news__box-card-box2--img" src="./images/news-icon.png" alt="">
+            </div>
+            <div class="news__box-card-text">
+              <p class="news__box-card-text-title">
+                Toshkent, Sergeli-8a
+              </p>
+              <div class="news__box-card-text-card">
+                <p class="news__box-card-text-card-title">
+                  26 000 000 soʻm 
+                </p>
+                <img src="./images/star_border.png" alt="star_border-img">
+              </div>
+              <div class="news__box-card-text--span">
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/view_stream.png" alt="view_stream-img">
+                  <span class="news__box-card-text--span-card-span">62 m2</span>
+                </div>
+
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/meeting_room.png" alt="meeting_room-img">
+                  <span class="news__box-card-text--span-card-span">2 x</span>
+                </div>
+
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/stairs.png" alt="stairs-img">
+                  <span class="news__box-card-text--span-card-span">4/9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__box-card">
+            <img class="news__box-card-img3" src="./images/news-img3.png" alt="news-img">
+            <div class="news__box-card-box3">
+              <img class="news__box-card-box3--img" src="./images/news-icon.png" alt="">
+            </div>
+            <div class="news__box-card-text">
+              <p class="news__box-card-text-title">
+                Toshkent, Sergeli-8a
+              </p>
+              <div class="news__box-card-text-card">
+                <p class="news__box-card-text-card-title">
+                  26 000 000 soʻm 
+                </p>
+                <img src="./images/star_border.png" alt="star_border-img">
+              </div>
+              <div class="news__box-card-text--span">
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/view_stream.png" alt="view_stream-img">
+                  <span class="news__box-card-text--span-card-span">62 m2</span>
+                </div>
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/meeting_room.png" alt="meeting_room-img">
+                  <span class="news__box-card-text--span-card-span">2 x</span>
+                </div>
+
+                <div class="news__box-card-text--span-card">
+                  <img src="./images/stairs.png" alt="stairs-img">
+                  <span class="news__box-card-text--span-card-span">4/9</span>
+                </div>  
+              
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-main">
+      <div class="footer">
+        <div class="container">
+          <div class="footer__box">
+            <div>
+              <p class="footer__box-text1">
+                Biz haqimizda
+              </p>
+              <p class="footer__box-caption">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+            <div>
+              <p class="footer__box-text1">
+                Aloqa uchun
+              </p>
+              <p class="footer__box-caption footer__box-caption-aloqa">
+                Manzil: Toshkent sh., Bektemir 2,5
+              </p>
+              <p class="footer__box-caption footer__box-caption-aloqa">
+                Telefon raqam: +998 90 123 45 67
+              </p>
+              <p class="footer__box-caption footer__box-caption-aloqa ">
+                Pochta: info@domain.com
+              </p>
+            </div>
+            <div>
+              <p class="footer__box-text1">
+                Link
+              </p>
+              <ul>
+                <li class="footer__box-caption footer__box-caption-link"><a href="#" class="footer__box-caption-link">Bosh
+                    sahifa</a></li>
+                <li class="footer__box-caption footer__box-caption-link"><a href="#"
+                    class="footer__box-caption-link">Xizmatlar</a></li>
+                <li class="footer__box-caption footer__box-caption-link"><a href="#"
+                    class="footer__box-caption-link">Manzillar</a></li>
+                <li class="footer__box-caption footer__box-caption-link"><a href="#"
+                    class="footer__box-caption-link">Dillerlar</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="footer__box-text1">
+                Yordam
+              </p>
+              <p class="footer__box-caption">
+                Ko’p beriladigan savollar
+              </p>
+              <p class="footer__box-caption">
+                Boshqa mavzu
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-bottom">
+            <div>
+              <a href="#">
+                <img src="./images/footer-logo.png" alt="footer-logo">
+              </a>
+            </div>
+            <div class="footer-box-bottom-icon">
+              <a href="#">
+                <img src="./images/linkeden.svg" alt="linkedin-icon">
+              </a>
+              <a href="#">
+                <img src="./images/instagram-icon.png" alt="instagram-icon">
+              </a>
+              <a href="#">
+                <img src="./images/facebook-icon.svg" alt="facebook-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
